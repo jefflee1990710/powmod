@@ -29,8 +29,28 @@ describe('#getBN', function() {
 })
 
 describe('#modpow', function() {
-    it("normal discrete logarithm", () => {
+    it("normal discrete logarithm from integer", () => {
         let x = 2, n = 3, g = 10
+        let r = powmod(g, x, n)
+        expect(r.toString()).eq("1")
+    })
+    it("normal discrete logarithm from string", () => {
+        let x = '2', n = '3', g = '10'
+        let r = powmod(g, x, n)
+        expect(r.toString()).eq("1")
+    })
+    it("normal discrete logarithm from byte array", () => {
+        let x = [2], n = [3], g = [10]
+        let r = powmod(g, x, n)
+        expect(r.toString()).eq("1")
+    })
+    it("normal discrete logarithm from big integer", () => {
+        let x = new BigInteger("2", 10), n = new BigInteger("3", 10), g = new BigInteger("10", 10)
+        let r = powmod(g, x, n)
+        expect(r.toString()).eq("1")
+    })
+    it("normal discrete logarithm from mix data type", () => {
+        let x = new BigInteger("2", 10), n = "3", g = [10]
         let r = powmod(g, x, n)
         expect(r.toString()).eq("1")
     })
