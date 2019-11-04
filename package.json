@@ -1,0 +1,26 @@
+{
+  "name": "powmod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Lee <jefflee1990710@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "node-forge": "^0.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jefflee1990710/powmod"
+  },
+  "keywords": [
+    "power",
+    "powmod",
+    "modulos",
+    "discrete logarithm"
+  ]
+}
