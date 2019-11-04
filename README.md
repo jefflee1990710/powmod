@@ -1,7 +1,7 @@
-Calculate discrete logarithm (powmod)
+Calculate powmod
 =========
 
-A very simple library to generate prime number with expected bit size.
+A very simple library to calculate powmod from difference form of integer
 
 ## Installation
 
